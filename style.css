@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+* {
+    font-family: 'Amiri', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+body#index {
+    direction: rtl;
+    min-height: 100vh;
+    background-image: url("./images/insideMosque.jpg");
+    background-size: cover;
+    position: relative;
+}
+body#index::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24 24 24 / 40%);
+  z-index: -1;
+}
+header h1 {
+  display: inline-block;
+  margin-right: 5px;
+  color: #a7a8a7;
+}
+header i {
+  font-size: 32px;
+  color: #a7a8a7;
+}
+.main {
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.main h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #a7a8a7;
+}
+.main .holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px 20px;
+  padding-bottom: 30px;
+}
+.main a {
+  text-decoration: none;
+  color: black;
+}
+.main a:focus {
+  color: black;
+}
+.main .holder .country {
+  box-shadow: 0 2px 15px rgba(154, 154, 154, 0.1);
+  background-color: #e2e2e28c;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px 20px;
+  max-width: 350px;
+  cursor: pointer;
+}
+.main .holder .country .flag img {
+  width: 100%;
+  border-radius: 14px;
+}
+.main .holder .country .cont-name h3 {
+  font-size: 26px;
+  margin-top: 5px;
+}
+/* cities */
+body.cities {
+  direction: rtl;
+  min-height: 100vh;
+  background-image: url("./images/cities.jpg");
+  background-size: cover;
+  position: relative;
+}
+body.cities::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(62 62 62 / 25%);
+  z-index: -1;
+}
+body.cities header h1,
+body.cities header i,
+body.cities .main h2 {
+  color: black;
+}
+.main .cities-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.cities-holder .city {
+  box-shadow: 0 2px 15px rgba(154, 154, 154, 0.1);
+  background-color: #fffefe94;
+  border-radius: 20px;
+  padding: 20px 20px;
+  width: fit-content;
+  font-size: 25px;
+  text-align: center;
+}
+/* times */
+body.tables {
+  direction: rtl;
+  min-height: 100vh;
+  background-image: url("./images/75290.jpg");
+  background-size: cover;
+  position: relative;
+}
+body.tables::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(62 62 62 / 8%);
+  z-index: -1;
+}
+body.tables header h1,
+body.tables header i,
+body.tables .main h2 {
+  color: #3d2e1f;
+}
+.main-table {
+  padding-top: 60px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-table .city-name {
+  color: #46321e;
+  font-size: 35px;
+}
+.main-table .date {
+  color: #2b1e10;
+  font-size: 20px;
+}
+.main-table .times {
+  width: 500px;
+  margin: 10px auto;
+}
+.main-table .pray {
+  justify-content: space-between;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  margin: 0 0 8px;
+}
+.main-table .pray i {
+  height: 45px;
+  background-color: #654b3e;
+  width: 45px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #fbe5c2;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 52%) 0px 0px 6px;
+}
+.main-table .pray .pray-name {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,211,151,1) 44%, rgba(164,129,94,1) 100%);
+  height: 45px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  font-size: 26px;
+  margin: 0 5px;
+  color: #332722;
+  padding-right: 10px;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 52%) 0px 0px 6px;
+}
+.main-table .pray .pray-time {
+  flex-basis: 25%;
+  flex-basis: 25%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #654b3e;
+  font-weight: bold;
+  color: #fbe5c2;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 52%) 0px 0px 6px;
+}
+.main-table .image img {
+  transform: translateY(30px);
+  max-width: 550px;
+  max-height: 600px;
+}
+
+@media (max-width: 1053px){
+  body.tables {
+    background-color: #fff9ef;
+    background-image: none;
+  }
+  body.tables::before {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .tables .container {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1155px) {
+  .tables .container {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .tables .main-table {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tables .main-table .image {
+    position: relative;
+    top: -85px;
+}
+  body.tables header {
+    padding: 0 30px;
+  }
+  body.tables {
+  min-height: 100vh;
+  background-image: url("./images/75290.jpg");
+  background-size: cover;
+  position: relative;
+}
+  body.tables::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(62 62 62 / 8%);
+  z-index: -1;
+}
+}
+@media (max-width: 649px) {
+  .container .holder a {
+    margin: 10px auto;
+  }
+  body.tables header {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 540px) {
+  body.tables header {
+    padding: 0 10px;
+  }
+  body.tables .table {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 470px) {
+  body.tables {
+    background-color: #fff9ef;
+    background-image: none;
+  }
+  body.tables::before {
+    display: none;
+  }
+  .main-table .image img {
+    max-width: 511px;
+}
+}
+@media (max-width: 424px) {
+  .main .holder .country {
+    max-width: 300px;
+  }
+}
+@media (max-width: 225px) {
+  .container header i,
+  .container header h1{
+    font-size: 25px;
+  }
+}
